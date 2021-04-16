@@ -8,11 +8,9 @@ html, body {
 	background-color: var(--background);
 	color: var(--text);
 	font-family: var(--font);
-	display: block;
-	text-align: center;
 }
 
 h1 {
+	display: block;
 	margin: auto;
-	text-align: center;
 }

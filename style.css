@@ -6,9 +6,9 @@
 	background-color: var(--background);
 	color: var(--text);
 	font-family: var(--font);
-	display: block;
 (
 
 h1 {
+	display: block;
 	text-align: center;
 }

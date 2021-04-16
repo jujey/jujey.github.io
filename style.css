@@ -8,7 +8,11 @@
 	font-family: var(--font);
 (
 
+html, body {
+	height: 100%;
+}
+
 h1 {
+	display: table;
 	margin: auto;
-	text-align: center;
 }

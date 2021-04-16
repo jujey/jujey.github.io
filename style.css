@@ -1,9 +1,25 @@
 :root {
 	--background: #101010;
+	--background2: #303030;
 	--text: #D1D1D1;
 	--font: TimesNewRoman;
 
 	background-color: var(--background);
 	color: var(--text);
 	font-family: var(--font);
+}
+
+h1 {
+	width: 30%;
+	margin: auto;
+	text-align: center;
+	border: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: var(--background2);
+	transition-duration: 0.5s;
+}
+
+h1:hover {
+	border-color: var(--text);
 }

@@ -8,6 +8,10 @@
 	font-family: var(--font);
 (
 
+html, body {
+	text-align: center;
+}
+
 h1 {
 	display: block;
 	text-align: center;

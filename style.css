@@ -4,11 +4,11 @@
 	--font: TimesNewRoman;;
 }
 
-html {
+html, body {
+	background-color: var(--background);
 }
 
-body {
-	background-color: var(--background);
+h1 {
 	color: var(--text);
 	font-family: var(--font);
 }

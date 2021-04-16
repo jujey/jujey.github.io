@@ -13,6 +13,6 @@ html, body {
 }
 
 h1 {
-	display: table;
 	margin: auto;
+	text-align: center;
 }

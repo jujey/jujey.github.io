@@ -1,14 +1,9 @@
 :root {
 	--background: #101010;
 	--text: #D1D1D1;
-	--font: TimesNewRoman;;
-}
+	--font: TimesNewRoman;
 
-html, body {
 	background-color: var(--background);
-}
-
-h1 {
 	color: var(--text);
 	font-family: var(--font);
-}
+(

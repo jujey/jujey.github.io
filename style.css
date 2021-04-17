@@ -15,19 +15,21 @@
 }
 
 body {
-	margin-top: 100px;
-	margin-left: 350px;
-	margin-right: 350px;
+	margin-top: 6.5rem;
+	margin-left: 22rem;
+	margin-right: 22rem;
 }
 
 h1 {
-	font-size: 35px;
+	font-size: 2.2rem;
 	margin: auto;
 	text-align: center;
 	width: 100px;
 }
 
 p {
-	font-size: 20px;
-	text-align: center;
+	margin: auto;
+	font-size: 1.2rem;
+	text-indent: 3rem;
+	text-align: left;
 }

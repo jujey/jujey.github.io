@@ -38,7 +38,7 @@ h1 {
         overflow-x: hidden !important;
     }
     .container {
-        max-width: 100% !important;
+    	font-size: 10px;
         overflow-x: hidden !important;
     }
 }

@@ -3,7 +3,7 @@
 	--background2: #303030;
 	--text: #D1D1D1;
 	--font: TimesNewRoman;
-	--version: 2;
+	--version: 1;
 	background-color: var(--background);
 	color: var(--text);
 	font-family: var(--font);

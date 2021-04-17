@@ -7,6 +7,7 @@
 	background-color: var(--background);
 	color: var(--text);
 	font-family: var(--font);
+	line-height: 1.25;
 }
 
 ::selection {
@@ -33,9 +34,11 @@ h1 {
 	text-align: center;
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 768px) {
     body {
         overflow-x: hidden !important;
+	padding-left: 20px;
+	padding-right: 20px;
     }
     .container {
         max-width: 100% !important;

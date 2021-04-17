@@ -37,7 +37,7 @@ h1 {
     body {
         overflow-x: hidden !important;
     }
-    .container {
+    #about {
     	font-size: 10px;
         overflow-x: hidden !important;
     }

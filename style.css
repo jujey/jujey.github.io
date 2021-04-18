@@ -24,11 +24,21 @@
 	color: var(--text);
 	font-family: var(--font);
 	line-height: 1.50;
+	transition-duration: 0.5s;
 }
 
 ::selection {
 	color: var(--background);
 	background: var(--text);
+}
+
+a {
+	color: var(--text);
+	text-decoration: none;
+}
+
+hr {
+	border: 1px dotted var(--background2);
 }
 
 body {
@@ -45,12 +55,10 @@ h1 {
 }
 
 p {
+	text-indent: 70px;
 	margin: auto;
 	font-size: 18px;
-}
-
-#about {
-	text-align: center;
+	text-align: left;
 }
 
 @media screen and (max-width: 1000px) {

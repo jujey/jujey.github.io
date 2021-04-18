@@ -23,6 +23,7 @@
 	background-color: var(--background);
 	color: var(--text);
 	font-family: var(--font);
+	font-weight: normal;
 	line-height: 1.50;
 }
 

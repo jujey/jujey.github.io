@@ -35,7 +35,7 @@ a {
 	margin: auto;
 	color: var(--text);
 	text-decoration: none;
-	transition: 0.10s;
+	transition: 0.25s ease-in-out;
 }
 
 a:hover {

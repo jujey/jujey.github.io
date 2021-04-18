@@ -1,13 +1,29 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: #EEEEEE;
+		--background2: #D1D1D1;
+		--text: #303030;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #101010;
+		--background2: #303030;
+		--text: #EEEEEE;
+	}
+}
+
 :root {
-	--background: #101010;
-	--background2: #303030;
-	--text: #D1D1D1;
-	--font: TimesNewRoman;
+	--font: 'Gilda Display', serif;
+	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    	text-rendering: optimizeLegibility;
 	--version: 1;
 	background-color: var(--background);
 	color: var(--text);
 	font-family: var(--font);
-	line-height: 1.25;
+	line-height: 1.50;
 }
 
 ::selection {
@@ -17,31 +33,43 @@
 
 body {
 	padding-top: 100px;
-	padding-left: 300px;
-	padding-right: 300px;
+	padding-left: 350px;
+	padding-right: 350px;
 }
 
 h1 {
-	font-size: 35px;
+	font-size: 32px;
 	margin: auto;
 	margin-bottom: 10px;
 	text-align: center;
 }
 
-#about {
+p {
 	margin: auto;
-	font-size: 20px;
+	font-size: 17px;
+}
+
+#about {
 	text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden !important;
-	padding-left: 20px;
-	padding-right: 20px;
-    }
-    .container {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 28px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	body {
+        	overflow-x: hidden !important;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.container {
+		max-width: 100% !important;
+	        overflow-x: hidden !important;
+	}
 }

@@ -55,7 +55,7 @@ h1 {
 }
 
 p {
-	text-indent: 70px;
+	text-indent: 50px;
 	margin: auto;
 	font-size: 18px;
 	text-align: left;
@@ -68,6 +68,7 @@ p {
 
 	p {
 		font-size: 14px;
+		text-indent: 25px;
 	}
 
 	body {

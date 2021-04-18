@@ -24,7 +24,6 @@
 	color: var(--text);
 	font-family: var(--font);
 	line-height: 1.50;
-	transition-duration: 0.5s;
 }
 
 ::selection {
@@ -33,12 +32,20 @@
 }
 
 a {
+	margin: auto;
 	color: var(--text);
 	text-decoration: none;
+	transition: 0.10s;
+}
+
+a:hover {
+	color: var(--background2);
 }
 
 hr {
-	border: 1px dotted var(--background2);
+	border: 1px solid var(--background2);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 body {
@@ -49,10 +56,20 @@ body {
 }
 
 h1 {
-	font-size: 32px;
+	font-size: 34px;
 	margin: auto;
 	margin-bottom: 10px;
 	text-align: center;
+}
+
+h1.title {
+	font-size: 28px;
+}
+
+h1.home {
+	color: var(--background2);
+	transition: 0.10s;
+	font-style: italic;
 }
 
 p {
@@ -62,9 +79,32 @@ p {
 	text-align: left;
 }
 
+p.sep {
+	text-indent: 0px;
+	border-bottom: 1px dotted var(--background2);
+}
+
+p.list {
+	text-indent: 0px;
+	float: left;
+}
+
+p.date {
+	text-indent: 0px;
+	float: right;
+}
+
 @media screen and (max-width: 1000px) {
 	h1 {
-		font-size: 28px;
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h1.title {
+		font-size: 24px;
 	}
 
 	p {

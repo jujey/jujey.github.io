@@ -72,6 +72,10 @@ h1.home {
 	font-style: italic;
 }
 
+h1.home:hover {
+	text-decoration: underline;	
+}
+
 p {
 	text-indent: 50px;
 	margin: auto;

@@ -40,11 +40,24 @@ a {
 	margin: auto;
 	color: var(--text);
 	text-decoration: none;
+	-webkit-transition: 0.25s ease-in-out;
 	transition: 0.25s ease-in-out;
 }
 
+a:link {
+        color: var(--text);
+}
+
+a:visited {
+        color: var(--text);
+}
+
 a:hover {
-	color: var(--background2);
+        color: var(--background2);
+}
+
+a:active {
+	color: var(--text);
 }
 
 hr {
@@ -73,6 +86,7 @@ h1.title {
 
 h1.home {
 	color: var(--background2);
+	-webkit-transition: 0.10s;
 	transition: 0.10s;
 	font-style: italic;
 }

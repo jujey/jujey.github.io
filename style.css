@@ -102,6 +102,10 @@ p {
 	text-align: left;
 }
 
+p.center {
+	text-align: center;
+}
+
 p.sep {
 	text-indent: 0px;
 	border-bottom: 1px dotted var(--background2);

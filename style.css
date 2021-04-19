@@ -88,10 +88,11 @@ h1.home {
 	-webkit-transition: 0.10s;
 	transition: 0.10s;
 	font-style: italic;
+	font-weight: bold;
 }
 
 h1.home:hover {
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
 p {

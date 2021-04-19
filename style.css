@@ -11,14 +11,14 @@
 	line-height: 1.50;
 	--background: #EEEEEE;
 	--background2: #C1C1C1;
-	--text: #303030;
+	--text: #404040;
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		--background: #EEEEEE;
 		--background2: #C1C1C1;
-		--text: #303030;
+		--text: #404040;
 	}
 }
 

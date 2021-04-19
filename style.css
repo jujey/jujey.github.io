@@ -103,6 +103,7 @@ p {
 }
 
 p.center {
+	text-indent: 0px;
 	text-align: center;
 }
 

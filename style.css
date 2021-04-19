@@ -1,14 +1,15 @@
 :root {
+	--version: 1;
 	--font: 'Gilda Display', serif;
 	-webkit-font-smoothing: antialiased;
     	-moz-osx-font-smoothing: grayscale;
     	text-rendering: optimizeLegibility;
-	--version: 1;
-	background-color: var(--background);
-	color: var(--text);
 	font-family: var(--font);
 	font-weight: normal;
 	line-height: 1.50;
+
+	background-color: var(--background);
+	color: var(--text);
 	--background: #EEEEEE;
 	--background2: #C1C1C1;
 	--text: #404040;
@@ -28,11 +29,6 @@
 		--background2: #303030;
 		--text: #EEEEEE;
 	}
-}
-
-::selection {
-	color: var(--background);
-	background: var(--text);
 }
 
 a {

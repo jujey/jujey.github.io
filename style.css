@@ -64,6 +64,7 @@ hr {
 	border: 1px solid var(--background2);
 	margin-left: auto;
 	margin-right: auto;
+	margin: 25px;
 }
 
 body {
@@ -75,8 +76,6 @@ body {
 
 h1 {
 	font-size: 34px;
-	margin: auto;
-	margin-bottom: 10px;
 	text-align: center;
 }
 

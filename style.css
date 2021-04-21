@@ -83,6 +83,11 @@ hr {
 	margin: 25px;
 }
 
+hr.dotted {
+	border: 1px dotted var(--background2);
+	margin: 0px;
+}
+
 body {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -134,11 +139,6 @@ p.thought {
 p.center {
 	text-indent: 0px;
 	text-align: center;
-}
-
-p.sep {
-	text-indent: 0px;
-	border-bottom: 1px dotted var(--background2);
 }
 
 p.list {

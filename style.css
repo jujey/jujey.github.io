@@ -85,7 +85,7 @@ hr {
 
 hr.dotted {
 	border: 1px dotted var(--background2);
-	margin: 0px;
+	margin: 5px;
 }
 
 body {
@@ -167,7 +167,6 @@ p.date {
 	h1.titlethought {
 		margin-left: 0px;
 		margin-right: 0px;
-/*		text-align: center;*/
 		font-size: 20px;
 	}
 
@@ -180,6 +179,10 @@ p.date {
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+
+	hr.dotted {
+		margin: 0px;
+	}	
 
 	body {
         	overflow-x: hidden !important;

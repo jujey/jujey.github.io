@@ -1,8 +1,9 @@
 :root {
-	--version: 2;
+	--version: 1;
 	--font: 'Gilda Display', serif;
-	-webkit-font-smoothing: antialiased;
-    	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+	font-smooth: never;
     	text-rendering: optimizeLegibility;
 	font-family: var(--font);
 	font-weight: normal;
@@ -127,6 +128,7 @@ h1.home:hover {
 }
 
 p {
+	font-weight: light;
 	text-indent: 7%;
 	margin: auto;
 	font-size: 100%;

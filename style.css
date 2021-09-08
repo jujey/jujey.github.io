@@ -8,7 +8,7 @@
 	font-family: var(--font);
 	font-weight: normal;
 	line-height: 1.50;
-
+	
 	background-color: var(--background);
 	color: var(--text);
 	--background: #EEEEEE;
@@ -67,18 +67,14 @@
 }
 
 img {
-	z-index: 1;
-	padding-left: 1%;
-	padding-bottom: 1%;
-	padding-right: 1%;
+	display:inline-block;
+	padding-left: 2%;
+	padding-right: 2%;
 	width: 7%;
 	height: 7%;
 }
 
 img.youtube {
-	object-fit: contain;
-	margin: auto;
-	display: block;
 	content: var(--youtube);
 }
 
@@ -87,8 +83,6 @@ img.youtube:hover {
 }
 
 img.github {
-	margin: auto;
-	display: block;
 	content: var(--github);
 }
 
@@ -97,13 +91,15 @@ img.github:hover {
 }
 
 img.twitch {
-	margin: auto;
-	display: block;
 	content: var(--twitch);
 }
 
 img.twitch:hover {
 	content: var(--twitch-hover);
+}
+
+div.links {
+	text-align: center;
 }
 
 a {
@@ -143,7 +139,6 @@ hr.dotted {
 }
 
 body {
-	justify-content: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
 	padding-left: 25%;
@@ -233,9 +228,6 @@ p.date {
 	}
 
 	img {
-		padding-left: 2%;
-		padding-bottom: 2%;
-		padding-right: 2%;
 		width: 10%;
 		height: 10%;
 	}

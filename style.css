@@ -14,6 +14,13 @@
 	--background: #EEEEEE;
 	--background2: #C1C1C1;
 	--text: #404040;
+	--youtube: url("icons/youtube-light.png");
+	--github: url("icons/github-light.png");
+	--twitch: url("icons/twitch-light.png");
+	--youtube-hover: url("icons/youtube-light-hover.png");
+	--github-hover: url("icons/github-light-hover.png");
+	--twitch-hover: url("icons/twitch-light-hover.png");
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,6 +28,9 @@
 		--background: #EEEEEE;
 		--background2: #C1C1C1;
 		--text: #404040;
+		--youtube: url("icons/youtube-light.png");
+		--github: url("icons/github-light.png");
+		--twitch: url("icons/twitch-light.png");
 	}
 }
 
@@ -29,6 +39,9 @@
 		--background: #101010;
 		--background2: #303030;
 		--text: #DDDDDD;
+		--youtube: url("icons/youtube-dark.png");
+		--github: url("icons/github-dark.png");
+		--twitch: url("icons/twitch-dark.png");
 	}
 }
 
@@ -53,12 +66,50 @@
 	background: var(--text);
 }
 
+img {
+	z-index: 1;
+	padding-left: 1%;
+	padding-bottom: 1%;
+	padding-right: 1%;
+	width: 7%;
+	height: 7%;
+}
+
+img.youtube {
+	object-fit: contain;
+	margin: auto;
+	display: block;
+	content: var(--youtube);
+}
+
+img.youtube:hover {
+	content: var(--youtube-hover);
+}
+
+img.github {
+	margin: auto;
+	display: block;
+	content: var(--github);
+}
+
+img.github:hover {
+	content: var(--github-hover);
+}
+
+img.twitch {
+	margin: auto;
+	display: block;
+	content: var(--twitch);
+}
+
+img.twitch:hover {
+	content: var(--twitch-hover);
+}
+
 a {
 	margin: auto;
 	color: var(--text);
 	text-decoration: none;
-	-webkit-transition: 0.25s ease-in-out;
-	transition: 0.25s ease-in-out;
 }
 
 a:link {
@@ -92,6 +143,7 @@ hr.dotted {
 }
 
 body {
+	justify-content: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
 	padding-left: 25%;
@@ -117,8 +169,6 @@ h1.titlethought {
 
 h1.home {
 	color: var(--background2);
-	-webkit-transition: 0.10s;
-	transition: 0.10s;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -161,6 +211,35 @@ p.date {
 }
 
 @media screen and (max-width: 800px) {
+	:root {
+		--youtube: url("icons/youtube-light-small.png");
+		--github: url("icons/github-light-small.png");
+		--twitch: url("icons/twitch-light-small.png");
+	}
+	@media (prefers-color-scheme: light) {
+		:root {
+			--youtube: url("icons/youtube-light-small.png");
+			--github: url("icons/github-light-small.png");
+			--twitch: url("icons/twitch-light-small.png");
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--youtube: url("icons/youtube-dark-small.png");
+			--github: url("icons/github-dark-small.png");
+			--twitch: url("icons/twitch-dark-small.png");
+		}
+	}
+
+	img {
+		padding-left: 2%;
+		padding-bottom: 2%;
+		padding-right: 2%;
+		width: 10%;
+		height: 10%;
+	}
+
 	h1 {
 		font-size: 200%;
 	}
@@ -177,7 +256,7 @@ p.date {
 
 	p {
 		font-size: 100%;
-		text-indent: 7%;
+		text-indent: 8%;
 	}
 	
 	p.thought {
@@ -205,5 +284,40 @@ p.date {
 	.container {
 		max-width: 100% !important;
 		overflow-x: hidden !important;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	img {
+		width: 14%;
+		height: 14%;
+	}
+}
+
+@media screen and (max-width: 225px) {
+	:root {
+		--youtube: url("icons/youtube-light.png");
+		--github: url("icons/github-light.png");
+		--twitch: url("icons/twitch-light.png");
+	}
+	@media (prefers-color-scheme: light) {
+		:root {
+			--youtube: url("icons/youtube-light-very-small.png");
+			--github: url("icons/github-light-very-small.png");
+			--twitch: url("icons/twitch-light-very-small.png");
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--youtube: url("icons/youtube-dark-very-small.png");
+			--github: url("icons/github-dark-very-small.png");
+			--twitch: url("icons/twitch-dark-very-small.png");
+		}
+	}
+
+	img {
+		width: 16%;
+		height: 16%;
 	}
 }

@@ -9,7 +9,7 @@
 	font-weight: normal;
 	line-height: 1.50;
 	
-	background-image: url('background-light.png');
+	/*background-image: url('background-light.png');*/
 	background-color: var(--background);
 	color: var(--text);
 	--background: #EEEEEE;
@@ -26,7 +26,7 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		background-image: url('background-light.png');
+		/*background-image: url('background-light.png');*/
 		--background: #EEEEEE;
 		--background2: #C1C1C1;
 		--text: #404040;
@@ -41,7 +41,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		background-image: url('background-dark.png');
+		/*background-image: url('background-dark.png');*/
 		--background: #101010;
 		--background2: #303030;
 		--text: #DDDDDD;

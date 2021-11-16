@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+@import url('https://css.gg/terminal.css');
+@import url('https://css.gg/play-button-r.css');
+@import url('https://css.gg/cast.css');
 
 :root {
 	--version: 1;
 	--font: 'Lora', serif;
-	/*--font: 'Gilda Display', serif;*/
 	-moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 	font-smooth: never;
@@ -36,6 +38,111 @@
 	}
 }
 
+.gg-terminal {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 2px
+}
+.gg-terminal::after,
+.gg-terminal::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-terminal::before {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 3px
+}
+.gg-terminal::after {
+    width: 4px;
+    height: 2px;
+    background: currentColor;
+    top: 10px;
+    left: 11px
+}
+
+.gg-play-button-r {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 4px
+}
+.gg-play-button-r::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid;
+    top: 20%;
+    left: 35%;
+}
+
+.gg-cast {
+    background:
+    linear-gradient( to left,
+        currentColor 5px,transparent 0)
+        no-repeat bottom right/6px 2px,
+    linear-gradient( to left,
+        currentColor 5px,transparent 0)
+        no-repeat top left/2px 2px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 20px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-radius: 2px;
+    border-left: 0
+  }
+  .gg-cast::after,
+  .gg-cast::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 6px double;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    bottom: -10px;
+    left: -10px
+  }
+  .gg-cast::after {
+    width: 4px;
+    height: 4px;
+    border: 2px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    bottom: -2px;
+    left: -2px
+  }
+
 ::selection {
 	color: var(--background);
 	background: var(--text);
@@ -59,6 +166,11 @@
 
 div.links {
 	text-align: center;
+}
+
+i {
+	margin-left: 1.5%;
+	margin-right: 1.5%;
 }
 
 a {
@@ -210,12 +322,5 @@ p.date {
 	.container {
 		max-width: 100% !important;
 		overflow-x: hidden !important;
-	}
-}
-
-@media screen and (max-width: 420px) {
-	img {
-		width: 14%;
-		height: 14%;
 	}
 }

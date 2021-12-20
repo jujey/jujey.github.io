@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 @import url('https://css.gg/terminal.css');
@@ -8,7 +7,8 @@
 
 :root {
 	--version: 1;
-	--font: 'Rock 3D', cursive;
+	--font-1: 'Rock 3D', cursive;
+	--font-2: 'Rock 3D', cursive;
 	--background: #EEEEEE;
 	--background2: #C1C1C1;
 	--text: #404040;
@@ -16,7 +16,7 @@
 	-webkit-font-smoothing: antialiased;
 	font-smooth: never;
 	text-rendering: optimizeLegibility;
-	font-family: var(--font);
+	font-family: var(--font-1);
 	font-weight: normal;
 	line-height: 1.50;
 
@@ -282,7 +282,7 @@ h1.home:hover {
 }
 
 p {
-	font-family: 'Roboto Mono', monospace;
+	font-family: var(--font-2);
 	font-weight: light;
 	text-indent: 7%;
 	margin: auto;

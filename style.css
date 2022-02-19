@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+	--background: #EEEEEE;
+	--background-2: #CCCCCC;
+	--text: #404040;
+}
+
+html, body, a, pre {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 15px;
+	color: var(--text);
+	font-smooth: never;
+	-webkit-font-smoothing : none;
+}
+
+body {
+	background-color: var(--background);
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+a.icon {
+	text-decoration: none;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+}
+
+::selection {
+	color: var(--background);
+	background-color: var(--text);
+}
+
+::-webkit-scrollbar {
+        width: 12px;
+}
+
+::-webkit-scrollbar-track {
+        background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+        background: var(--background-2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+        background: var(--text);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: #EEEEEE;
+		--background-2: #CCCCCC;
+		--text: #404040;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #070707;
+		--background-2: #202020;
+		--text: #B2B2B2;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	html, body, a, pre {
+		font-size: 14px;
+	}
+
+	body {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}

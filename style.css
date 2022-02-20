@@ -20,6 +20,10 @@ body {
 	margin-right: 25%;
 }
 
+p {
+	text-align: center;
+}
+
 a.icon {
 	text-decoration: none;
 }
